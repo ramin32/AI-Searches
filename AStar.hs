@@ -8,10 +8,12 @@ aStar t = aStar' [t] []
 aStar' open closed = case open of
     [] -> closed
     (Goal:_) -> Goal:closed
-    (x:xs) -> let uniqueChildren = generateUniqueChildren x (open ++ closed)
-                  weightedChildren = map (\y -> addWeight y (weight x)) uniqueChildren
+    (x:xs) -> let children = generateChildren x 
+                  weightedChildren = map (\y -> addWeight y (weight x)) children
                   heuristifiedChildren = map (\y -> addHeuristic y (weight y)) weightedChildren
                   prioritizedOpenList = (foldl (\acc y -> insertBy compareHeuristic y acc)
                                                xs
                                                heuristifiedChildren)
-                  in aStar' prioritizedOpenList (x:closed)
+                  -- Dyanmic programming step
+                  cleanList = nub prioritizedOpenList -- Removes duplicates (ie: worse nodes) 
+                  in aStar' cleanList (x:closed)

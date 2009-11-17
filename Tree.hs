@@ -2,7 +2,13 @@ module Tree where
 
 type Weight = Int 
 type Heuristic = Int 
-data Tree a = Void | Goal | Node a Weight Heuristic (Tree a) (Tree a) deriving (Ord, Eq) 
+data Tree a = Void | Goal | Node a Weight Heuristic (Tree a) (Tree a) deriving (Ord) 
+
+instance (Eq a) => Eq (Tree a) where
+    (Node x _ _ _ _) == (Node y _ _ _ _) = x == y
+    Void == Void = True
+    Goal == Goal = True
+    _ == _ = False
 
 instance (Show a) => Show (Tree a) where
     show Void = []
