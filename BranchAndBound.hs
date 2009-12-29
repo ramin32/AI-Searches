@@ -1,3 +1,9 @@
+{---------------------------------------------
+ - Ramin Rakhamimov
+ - CIS 716
+ - BFS search module.
+ ---------------------------------------------}
+ 
 module BranchAndBound where
 
 import Data.List 

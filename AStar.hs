@@ -1,3 +1,9 @@
+{---------------------------------------------
+ - Ramin Rakhamimov
+ - CIS 716
+ - A* search module.
+ ---------------------------------------------}
+ 
 module AStar where
 
 import Data.List 

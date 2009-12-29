@@ -1,3 +1,9 @@
+{---------------------------------------------
+ - Ramin Rakhamimov
+ - CIS 716
+ - DFS search module.
+ ---------------------------------------------}
+ 
 module Dfs where
 
 import Tree

@@ -1,3 +1,9 @@
+{---------------------------------------------
+ - Ramin Rakhamimov
+ - CIS 716
+ - ADT for Tree type.
+ ---------------------------------------------}
+ 
 module Tree where
 
 type Weight = Int 

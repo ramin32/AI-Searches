@@ -1,3 +1,8 @@
+{---------------------------------------------
+ - Ramin Rakhamimov
+ - CIS 716
+ - BFS search module.
+ ---------------------------------------------}
 module Bfs where
 
 import Tree

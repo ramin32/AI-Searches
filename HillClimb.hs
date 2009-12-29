@@ -1,3 +1,9 @@
+{---------------------------------------------
+ - Ramin Rakhamimov
+ - CIS 716
+ - Hill Climb search module.
+ ---------------------------------------------}
+ 
 module HillClimb where
 
 import Data.List 

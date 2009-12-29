@@ -1,9 +1,15 @@
-{------------------------------------------
- -
+{---------------------------------------------
  - Ramin Rakhamimov
  - CIS 716
- - Search implementations in Hasekll.
- -----------------------------------------}
+ - Search implementations in Haskell.
+ -
+ - Execution:
+ -   Dfs: [Goal,'E','J','I','D','B','A']
+ -   Bfs: [Goal,'D','E','F','H','B','C','A']
+ -   HillClimb: [Goal,'H','F','C','A']
+ -   BranchAndBound: [Goal,'H','C','B','A']
+ -   A*: [Goal,'H','F','C','A']
+ --------------------------------------------}
  
 import Tree
 import Dfs
